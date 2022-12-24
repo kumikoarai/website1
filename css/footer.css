@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+.footer_shinryojikan_box > table,
+.footer_shinryojikan_box > p,
+.footer_access_box > address,
+.copyright_box p,
+.footer_tel_box .footer_tel_inner_box span:last-of-type {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+#footer_joho_box div h2 {
+    font-family: "游明朝体", YuMincho, "Yu Mincho Demibold", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", serif;
+}
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#footer_joho_box {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 48px;
+}
+.footer_shinryojikan_box,
+.footer_access_box {
+    width: 50%;
+}
+
+.footer_shinryojikan_box {
+    padding-left: 40px;
+}
+
+.footer_access_box {
+    padding-left: 20px;
+}
+
+
+#footer_joho_box div h2 {
+    width: 440px;
+    height: 50px;
+    border-bottom: 1px solid #277dd4;
+    border-left: 10px solid #277dd4;
+    line-height: 50px;
+    font-size: 22px;
+    /*font-family: YuMincho-Regular, Yu Mincho;*/
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.footer_shinryojikan_box > table {
+    width: 440px;
+    margin-bottom: 14px;
+}
+
+.footer_shinryojikan_box > table tr {
+    border: 1px solid #3aabd2;
+}
+
+.footer_shinryojikan_box > table tr:nth-child(1) {
+    height: 50px;
+    background-color: #3aabd2;
+}
+.footer_shinryojikan_box > table tr:nth-child(2) {
+    height: 55px;
+}
+
+.footer_shinryojikan_box > table tr:nth-child(3) {
+    height: 55px;
+}
+
+.footer_shinryojikan_box > table tr:nth-child(1) th {
+    color: #fff;
+}
+
+.footer_shinryojikan_box > table tr:nth-child(1) th,
+.footer_shinryojikan_box > table tr td {
+    /*font-family: YuGothic-Regular, Yu Gothic;*/
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer_shinryojikan_box > table tr td:not(:first-of-type),
+.sankaku {
+    color: #3aabd2;
+}
+
+.footer_shinryojikan_box > table tr td,
+.footer_shinryojikan_box > table tr th {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.footer_shinryojikan_box > table tr td:not(:nth-child(1)) {
+    font-size: 20px;
+}
+
+.footer_shinryojikan_box > table tr td:nth-child(4) {
+    padding: 3px;
+}
+
+.footer_shinryojikan_box > table tr td:nth-child(4) > span {
+    display: inline-block;
+    transform: scaleX(2);
+    font-weight: 600;
+}
+
+.footer_shinryojikan_box > table tr th:nth-child(1) {
+    width: 145px;
+}
+
+.footer_shinryojikan_box > table tr td:nth-child(1) {
+    text-align: right;
+}
+.footer_shinryojikan_box > table tr th:nth-child(2),
+.footer_shinryojikan_box > table tr td:nth-child(2) {
+    padding-left: 35px;
+    width: 78px;
+}
+
+.footer_shinryojikan_box > table tr th:nth-child(3) {
+    width: 43px;
+}
+.footer_shinryojikan_box > table tr th:nth-child(4) {
+    width: 42px;
+}
+.footer_shinryojikan_box > table tr th:nth-child(5) {
+    width: 43px;
+}
+.footer_shinryojikan_box > table tr th:nth-child(6) {
+    width: 43px;
+}
+.footer_shinryojikan_box > table tr th:nth-child(7) {
+    width: auto;
+}
+
+
+.footer_shinryojikan_box > p {
+    font-size: 18px;
+    /*font-family: YuGothic-Regular, Yu Gothic;*/
+    width: 418px;
+    height: 129px;
+    line-height: 34px;
+    margin-bottom: 26px;
+    letter-spacing: 0.2px;
+    margin-left: 1px;
+}
+
+
+.footer_tel_box {
+    display: block;
+    width: 440px;
+    height: 65px;
+    border: 2px solid #3aabd2;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-decoration: none;
+    /*padding-left: 64px;*/
+    align-items: center;
+    pointer-events: none;
+}
+
+.footer_tel_box:hover {
+    background-color: #f4f9ff;
+}
+
+.footer_tel_inner_box {
+    display: flex;
+    width: 314px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.footer_tel_box .footer_tel_inner_box img {
+    width: 38px;
+    height: 38px;
+}
+
+.footer_tel_box .footer_tel_inner_box span:first-of-type {
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.footer_tel_box .footer_tel_inner_box span:last-of-type {
+    font-size: 39px;
+    font-weight: 700;
+    color: #3aabd2;
+    margin-left: 23px;
+    transform: scaleY(0.89);
+    display: inline-block;
+}
+
+#footer_joho_box .footer_access_box h2 {
+    margin-bottom: 30px;
+}
+
+.footer_access_box > address {
+    font-size: 0px;
+}
+
+.footer_access_box > address > p {
+    /*font-family: YuGothic-Regular, Yu Gothic;*/
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+}
+.footer_access_box > address > img {
+    margin-top: 10px;
+}
+
+.chuui {
+    display: block;
+    padding-left: 18px;
+}
+
+.chuui::before {
+    content: "※";
+    margin-left: -18px;
+}
+
+.copyright_box {
+    height: 50px;
+    background-color: #277dd4;
+}
+
+.copyright_box > p {
+    /*font-family: YuGothic-Medium, Yu Gothic;*/
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*======== ここから↓ IEハック =========*/
+_:-ms-input-placeholder, :root .footer_tel_inner_box {
+    display: block;
+    font-size: 0px;
+}
+
+_:-ms-input-placeholder, :root .footer_tel_box .footer_tel_inner_box > span:first-of-type {
+        display: block;
+        width: 38px;
+        height: 61px;
+        line-height: 61px;
+        margin: 0px;
+        padding-top: 13px;
+        float: left;
+}
+
+_:-ms-input-placeholder, :root .footer_tel_box .footer_tel_inner_box span:last-of-type {
+    font-size: 38px;
+    margin-left: 23px;
+    display: block;
+    width: 253px;
+    height: 61px;
+    line-height: 61px;
+    float: right;
+    padding-top: 9px;
+}
+/*======== ここまで↑ IEハック =========*/
+
+/*======== ここから↓ サファリ　ハック =========*/
+::-webkit-full-page-media, :future, :root .footer_tel_box .footer_tel_inner_box span:last-of-type {
+    font-size: 26px;
+    transform: scaleY(1.1);
+}
+/*======== ここまで↑ サファリ　ハック =========*/
+
+
+@media screen and (max-width: 1000px) {
+    .footer_tel_box {
+        pointer-events: auto;
+    }
+
+    #footer_joho_box {
+        width: 100%;
+        max-width: 930px;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+    
+    #footer_joho_box div h2 {
+        max-width: 440px;
+        width: 100%;
+    }
+
+    .footer_shinryojikan_box {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .footer_access_box {
+        padding-left: 10px;
+    }
+
+    .footer_shinryojikan_box > table {
+        max-width: 440px;
+        width: 100%;
+    }
+
+    .footer_shinryojikan_box > table tr th:nth-child(1) {
+        width: 33%;
+    }
+    
+    .footer_shinryojikan_box > table tr th:nth-child(2) {
+        width: 17%;
+    }
+    
+    .footer_shinryojikan_box > table tr th:nth-child(3) {
+        width: 10%;
+    }
+    .footer_shinryojikan_box > table tr th:nth-child(4) {
+        width: 9%;
+    }
+    .footer_shinryojikan_box > table tr th:nth-child(5) {
+        width: 10%;
+    }
+    .footer_shinryojikan_box > table tr th:nth-child(6) {
+        width: 10%;
+    }
+    .footer_shinryojikan_box > table tr th:nth-child(7) {
+        width: auto;
+    }
+
+    .footer_shinryojikan_box > p {
+        max-width: 440px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer_tel_box {
+        max-width: 440px;
+        width: 100%;
+    }
+
+    .footer_access_box > address > img {
+        max-width: 440px;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer_access_box > address > p {
+        margin-bottom: 0px;
+        line-height: 34px;
+    }
+    .footer_access_box h2 {
+        margin-bottom: 25px !important;
+    }
+
+}
+
+@media screen and (max-width: 799px) {
+    #footer_joho_box {
+        display: block;
+    }
+    .footer_shinryojikan_box, .footer_access_box {
+        width: 100%;
+    }
+    .footer_shinryojikan_box {
+        padding-right: 0px;
+    }
+    .footer_access_box {
+        padding-left: 0px;
+    }
+    #footer_joho_box div h2 {
+        margin: 0px auto 25px;
+    }
+    .footer_shinryojikan_box > table {
+        margin: 0px auto 14px;
+    }
+    .footer_shinryojikan_box > p {
+        margin: 0px auto 26px;
+    }
+    .footer_tel_box {
+        margin: 0px auto 50px;
+    }
+    .footer_access_box > address {
+        max-width: 440px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer_tel_inner_box {
+        display: table;
+        width: auto;
+    }
+
+    .footer_tel_box .footer_tel_inner_box span:first-of-type {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .footer_tel_box .footer_tel_inner_box span:last-of-type {
+        font-size: 32px;
+        padding-left: 8px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    /*======== ここから↓ IEハック =========*/
+    _:-ms-input-placeholder, :root .footer_tel_inner_box {
+        display: table;
+        width: auto;
+    }
+    _:-ms-input-placeholder, :root .footer_tel_box .footer_tel_inner_box span:first-of-type {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    _:-ms-input-placeholder, :root .footer_tel_box .footer_tel_inner_box span:last-of-type {
+        font-size: 32px;
+        padding-left: 8px;
+        display: table-cell;
+        vertical-align: middle;
+        margin-left: 0px;
+        width: auto;
+    }
+
+    /*======== ここまで↑ IEハック =========*/
+
+    /*======== ここから↓ サファリ　ハック =========*/
+    ::-webkit-full-page-media, :future, :root .footer_shinryojikan_box > table tr td:nth-child(1) {
+        font-size: 16px;
+    }
+    /*======== ここまで↑ サファリ　ハック =========*/
+
+}
+
+@media screen and (max-width: 550px) {
+    #footer_joho_box {
+        padding: 0px 10px;
+    }
+
+    .copyright_box > p {
+        font-size: 10px;
+    }
+
+    .footer_shinryojikan_box > table tr th:nth-child(2),
+    .footer_shinryojikan_box > table tr td:nth-child(2) {
+        padding-left: 0px;
+    }
+
+    .footer_shinryojikan_box > table tr th:nth-child(1) {
+        width: 36%;
+    }
+    .footer_shinryojikan_box > table tr th:not(:nth-child(1)),
+    .footer_shinryojikan_box > table tr td:not(:nth-child(1)) {
+        width: 10.6%;
+        text-align: center;
+    }
+}

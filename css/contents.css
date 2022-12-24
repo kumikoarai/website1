@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+#contents_message > p,
+.contents_main_box > section > div dl dt,
+.contents_main_box > section > div dl dd {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+#contents_message > p {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    line-height: 33px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+
+.contents_main_box > section:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+.contents_main_box > section > div {
+    border: 1px solid #B6B6B6;
+    background-color: #fcfcfc;
+    padding: 28px 33px;
+}
+
+.contents_main_box > section > div dl {
+    margin-bottom: -8px;
+}
+
+.contents_main_box > section > div dl dt::before {
+    content: "▪";
+    font-size: 22px;
+    display: inline-block;
+    width: 20px;
+}
+
+.contents_main_box > section > div dl dt,
+.contents_main_box > section > div dl dd {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+}
+
+
+.contents_main_box > section > div dl dt {
+    margin-bottom: 7px;
+    color: #277dd4;
+    margin-left: -21px;
+    margin-top: -3px;
+}
+
+.contents_main_box > section > div dl dt:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+.contents_main_box > section > div dl dd {
+    line-height: 33px;
+    word-break: keep-all;
+    line-break: strict;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.contents_main_box > section > div dl dd:not(:last-of-type) {
+    margin-bottom: 9px;
+}
+
+
+/*======== IEハック =========*/
+_:-ms-input-placeholder, :root .contents_main_box > section > div dl dd nobr {
+    word-break: keep-all;
+}
+
+_:-ms-input-placeholder, :root .contents_main_box > section > div dl dd wbr::before {
+    content: "\200B";
+}
+
+/*======== Firefoxハック =========*/
+@-moz-document url-prefix() {
+    .contents_main_box > section > div dl dd nobr {
+        word-break: keep-all;
+    }
+}
+
+
+@media screen and (max-width: 799px) {
+    .contents_main_box > section > div {
+        padding: 28px 21px;
+        padding-right: 10px;
+    }
+}

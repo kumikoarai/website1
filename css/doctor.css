@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+#doc_message > div > p,
+#doc_detail ul li {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+#doc_message {
+    margin-bottom: 50px;
+}
+
+#doc_message > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+#doc_message > div > div {
+    width: 250px;
+}
+
+#doc_message > div > div > img {
+    width: 250px;
+}
+
+#doc_message > div > p {
+    padding-left: 40px;
+    /*padding-right: 10px;*/
+    font-size: 18px;
+    line-height: 34px;
+    margin-top: -5px;
+}
+
+#doc_detail {
+    display: flex;
+}
+
+#doc_detail > div {
+    width: 50%;
+}
+
+#doc_detail h3 {
+    width: 440px;
+}
+
+#doc_detail > div:nth-child(2) {
+    padding-left: 20px;
+}
+
+#doc_detail ul {
+    margin-top: -2px;
+}
+
+#doc_detail ul li {
+    line-height: 32px;
+}
+
+.ryakureki,
+.shikaku {
+    margin-bottom: 42px;
+}
+
+.ryakureki ul li span:nth-child(1) {
+    letter-spacing: 0.03em;
+}
+.ryakureki ul li span:nth-child(2) {
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+.syozokugakkai ul li,
+.shikaku ul li,
+.yakusyoku ul li {
+    letter-spacing: 1px;
+}
+
+.syozokugakkai ul {
+    margin-bottom: -9px;
+}
+
+
+_:-ms-input-placeholder, :root #doc_message > div {
+    display: block;
+    font-size: 0px;
+}
+
+_:-ms-input-placeholder, :root #doc_message > div > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+_:-ms-input-placeholder, :root #doc_message > div > p {
+    display: inline-block;
+    width: calc(100% - 250px);
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1000px) {
+    #doc_detail > div:nth-child(1) {
+        padding-right: 10px;
+    }
+
+    #doc_detail > div:nth-child(2) {
+        padding-left: 10px;
+    }
+
+    #doc_detail h3 {
+        max-width: 440px;
+        width: 100%;
+    }
+
+    #doc_detail ul li {
+        display: table;
+        width: 100%;
+    }
+
+    .ryakureki ul li span:nth-child(1) {
+        display: table-cell;
+        width: 69px;
+    }
+
+    .ryakureki ul li span:nth-child(2) {
+        display: table-cell;
+        width: calc(100% - 69px);
+    }
+
+    /*======== ここから↓ サファリ　ハック =========*/
+    ::-webkit-full-page-media, :future, :root .ryakureki ul li span:nth-child(1) {
+        width: 72px;
+    }
+    ::-webkit-full-page-media, :future, :root .ryakureki ul li span:nth-child(2) {
+        width: calc(100% - 72px);
+    }
+
+    /*======== ここまで↑ サファリ　ハック =========*/
+
+}
+
+@media screen and (max-width: 799px) {
+    #doc_message > div {
+        display: block;
+    }
+
+    #doc_message > div > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    #doc_message > div > div > img {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    #doc_message > div > p {
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    #doc_detail {
+        display: block;
+    }
+
+    #doc_detail > div {
+        width: 100%;
+        padding: 0px !important;
+    }
+
+    .syozokugakkai {
+        margin-bottom: 42px;
+    }
+
+    .syozokugakkai ul {
+        margin-bottom: 0px;
+    }
+
+    #doc_detail h3 {
+        max-width: 100%;
+    }
+}

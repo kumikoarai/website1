@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+.question,
+.answer {
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+}
+
+#contents_message > p,
+.q_text,
+.a_text {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+.contents_main_box > section:not(:first-of-type) {
+    margin-top: 50px;
+}
+.contents_main_box dl dt,
+.contents_main_box dl dd {
+    border: 1px solid #707070;
+}
+
+.contents_main_box dl dt:not(:first-of-type) {
+    margin-top: 15px;
+}
+
+.contents_main_box dl {
+    align-items: center;
+}
+
+.contents_main_box dl dt {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.contents_main_box dl dd {
+    border-top: 0px solid #707070;
+}
+.contents_main_box dl dd > span {
+    display: flex;
+    padding: 20px;
+}
+
+.question {
+    font-size: 24px;
+    color: #277dd4;
+    display: inline-block;
+    width: 18px;
+    flex-shrink: 0;
+}
+
+.answer {
+    font-size: 26px;
+    color: #4cb1c2;
+    display: inline-block;
+    width: 18px;
+    flex-shrink: 0;
+}
+
+.q_text {
+    font-size: 18px;
+    padding: 0px 20px 0px 21px;
+    display: inline-block;
+    align-items: center;
+    padding-top: 5px;
+    letter-spacing: 0.2px;
+    flex: 1;
+    line-height: 23px;
+    position: relative;
+}
+
+.a_text {
+    font-size: 18px;
+    padding: 0px 20px 0px 21px;
+    letter-spacing: 0.2px;
+    flex: 1;
+    line-height: 35px;
+    margin-top: -6px;
+    margin-bottom: -6px;
+}
+
+.q_text::before,
+.q_text::after {
+    content: "";
+    display: block;
+    width: calc(8px * 1.414);
+    height: 2px;
+    background-color: #277dd4;
+    position: absolute;
+}
+
+.q_text::before {
+    top: 50%;
+    right: 9px;
+    transform: rotate(45deg);
+}
+
+.q_text::after {
+    top: 50%;
+    right: 2px;
+    transform: rotate(-45deg);
+}
+
+
+.q_text.open::before {
+    transform: rotate(-45deg);
+}
+
+.q_text.open::after {
+    transform: rotate(45deg);
+}
+
+
+.contents_main_box dl dd {
+    display: none;
+    background-color: #fcfcfc;
+}
+
+.question::after,
+.answer::after {
+    content: ".";
+}
+
+@media screen and (max-width: 799px) {
+    .contents_main_box dl dt {
+        padding: 10px;
+    }
+    .contents_main_box dl dd > span {
+        padding: 10px;
+    }
+    .a_text {
+        padding: 0px 0px 0px 21px;
+    }
+    .q_text::after {
+        right: 0px;
+    }
+    .q_text::before {
+        right: 7px;
+    }
+}

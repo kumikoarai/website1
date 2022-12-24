@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+#yoboutaisaku > p {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+
+#setsubi > ul,
+#yoboutaisaku > ul {
+    font-size: 0px;
+    width: 100%;
+}
+
+#setsubi > ul > li,
+#yoboutaisaku > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+#setsubi > ul > li:nth-child(even),
+#yoboutaisaku > ul > li:nth-child(even) {
+    padding-left: 20px;
+}
+
+.contents_main_box > section:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+
+#yoboutaisaku > p {
+    font-size: 18px;
+    line-height: 33px;
+    margin-top: -4px;
+    margin-bottom: 45px;
+}
+
+#setsubi > ul > li:not(:last-of-type):not(:nth-last-child(2)),
+#yoboutaisaku > ul > li:not(:last-of-type):not(:nth-last-child(2)) {
+    margin-bottom: 20px;
+}
+
+#setsubi > ul > li > img,
+#yoboutaisaku > ul > li > img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    #setsubi > ul > li,
+    #yoboutaisaku > ul > li {
+        width: 50%;
+    }
+
+/*    #setsubi > ul > li > img,
+    #yoboutaisaku > ul > li > img {
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }*/
+
+    #setsubi > ul > li:nth-child(even),
+    #yoboutaisaku > ul > li:nth-child(even) {
+        padding-left: 10px;
+    }
+
+    #setsubi > ul > li:nth-child(odd),
+    #yoboutaisaku > ul > li:nth-child(odd) {
+        padding-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 799px) {
+    #setsubi > ul > li,
+    #yoboutaisaku > ul > li {
+        width: 100%;
+        padding: 0px !important;
+        text-align: center;
+    }
+
+    #setsubi > ul > li:not(:last-of-type),
+    #yoboutaisaku > ul > li:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+}
